@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/newsListFragment">
+
+    <fragment
+        android:id="@+id/newsListFavourite"
+        android:name="com.edelweiss.edelnews.ui.NewsFavouriteFragment"
+        android:label="fragment_news_favourite"
+        tools:layout="@layout/fragment_news_favourite" />
+    <fragment
+        android:id="@+id/newsListFragment"
+        android:name="com.edelweiss.edelnews.ui.NewsListFragment"
+        android:label="fragment_news_list"
+        tools:layout="@layout/fragment_news_list" >
+        <action
+            android:id="@+id/action_newsListFragment_to_newsListFavourite"
+            app:destination="@id/newsListFavourite" />
+        <action
+            android:id="@+id/action_newsListFragment_to_Settings"
+            app:destination="@id/Settings" />
+        <action
+            android:id="@+id/action_newsListFragment_to_newsListSearch"
+            app:destination="@id/newsListSearch" />
+    </fragment>
+    <fragment
+        android:id="@+id/newsListSearch"
+        android:name="com.edelweiss.edelnews.ui.SearchFragment"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search" />
+    <fragment
+        android:id="@+id/Settings"
+        android:name="com.edelweiss.edelnews.ui.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" />
+</navigation>

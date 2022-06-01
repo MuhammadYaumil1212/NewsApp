@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--For light -->
+    <color name="colorPrimary">#192a56</color>
+    <color name="colorPrimaryDark">#3700b3</color>
+    <color name="colorPrimaryAccent">#03Dac5</color>
+    <color name="lightBackgroundColor">#dff9fb</color>
+
+    <!--For Dark-->
+    <color name="darkPrimaryColor">#141414</color>
+    <color name="darkTextColor">#fafafa</color>
+    <color name="darkIconTintColor">#A2A2A2</color>
+    <color name="darkBackgroundColor">#353b48</color>
+    <color name="textDarkColorSecondary">#8395a7</color>
+    <!--Amoled-->
+    <color name="light_text_color">#dcdde1</color>
+    <color name="amoledPrimaryColor">#000000</color>
+
+</resources>
